@@ -1,16 +1,12 @@
 import { NextResponse } from 'next/server';
 import { isAdminSessionValid } from '../../../../lib/admin-auth';
+import { APPS_SCRIPT_URL } from '../../../../lib/apps-script';
 
 export const runtime = 'nodejs';
 
 export async function POST(request) {
   if (!isAdminSessionValid(request)) {
     return NextResponse.json({ error: 'Sign in to the admin page before adding products.' }, { status: 401 });
-  }
-
-  const endpoint = process.env.GOOGLE_APPS_SCRIPT_URL;
-  if (!endpoint) {
-    return NextResponse.json({ error: 'The Google Apps Script URL is not configured.' }, { status: 503 });
   }
 
   let form;
@@ -53,7 +49,7 @@ export async function POST(request) {
   };
 
   try {
-    const response = await fetch(endpoint, {
+    const response = await fetch(APPS_SCRIPT_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),

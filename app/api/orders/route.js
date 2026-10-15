@@ -1,14 +1,10 @@
 import { NextResponse } from 'next/server';
 import { getProducts } from '../../../lib/products';
+import { APPS_SCRIPT_URL } from '../../../lib/apps-script';
 
 export const runtime = 'nodejs';
 
 export async function POST(request) {
-  const endpoint = process.env.GOOGLE_APPS_SCRIPT_URL;
-  if (!endpoint) {
-    return NextResponse.json({ error: 'Orders sheet connection is not configured yet.' }, { status: 503 });
-  }
-
   let order;
   try {
     order = await request.json();
@@ -54,7 +50,7 @@ export async function POST(request) {
   if (!valid) return NextResponse.json({ error: 'Please check the order details and try again.' }, { status: 400 });
 
   try {
-    const response = await fetch(endpoint, {
+    const response = await fetch(APPS_SCRIPT_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
