@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gadget Reservation - Asus Laptop LOQ</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Plus Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#00363a",
+            "primary-container": "#00f0ff",
+            "inverse-surface": "#e1e2ea",
+            "surface-variant": "#32353b",
+            "on-secondary-container": "#342800",
+            "outline": "#849495",
+            "primary": "#dbfcff",
+            "on-primary-fixed": "#002022",
+            "tertiary-fixed-dim": "#c0c7d4",
+            "outline-variant": "#3b494b",
+            "primary-fixed-dim": "#00dbe9",
+            "on-background": "#e1e2ea",
+            "surface-container-highest": "#32353b",
+            "on-tertiary-fixed": "#151c26",
+            "secondary-fixed-dim": "#e9c349",
+            "error-container": "#93000a",
+            "on-surface-variant": "#b9cacb",
+            "error": "#ffb4ab",
+            "secondary-container": "#af8d11",
+            "background": "#111319",
+            "secondary": "#e9c349",
+            "surface-container-high": "#272a30",
+            "on-primary-fixed-variant": "#004f54",
+            "on-surface": "#e1e2ea",
+            "tertiary-fixed": "#dce3f1",
+            "secondary-fixed": "#ffe088",
+            "on-secondary-fixed": "#241a00",
+            "tertiary": "#f3f6ff",
+            "on-secondary": "#3c2f00",
+            "on-tertiary-fixed-variant": "#404752",
+            "tertiary-container": "#d3dae8",
+            "inverse-primary": "#006970",
+            "primary-fixed": "#7df4ff",
+            "surface": "#111319",
+            "on-tertiary": "#2a313b",
+            "on-primary-container": "#006970",
+            "surface-container-lowest": "#0b0e13",
+            "surface-container": "#1d2025",
+            "surface-dim": "#111319",
+            "surface-tint": "#00dbe9",
+            "on-tertiary-container": "#585f6b",
+            "surface-bright": "#36393f",
+            "on-error": "#690005",
+            "on-secondary-fixed-variant": "#574500",
+            "inverse-on-surface": "#2e3036",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#191c21"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-lg": "1.5rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.5rem",
+            "margin-tablet": "2rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "label-numeric": ["JetBrains Mono"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "spec-code": ["JetBrains Mono"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "label-numeric": ["14px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "spec-code": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-fixed min-h-screen pb-32">
+<!-- Ambient Obsidian Hero Glow Background -->
+<div class="fixed inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,rgba(0,240,255,0.06),transparent)] z-0"></div>
+<!-- Focused Task Top Navigation Bar (Linear checkout screen: standard global BottomNavBar suppressed per UX guidelines) -->
+<header class="fixed top-0 left-0 w-full z-40 bg-surface/80 backdrop-blur-md px-gutter-mobile h-16 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<button aria-label="Go back" class="w-10 h-10 rounded-full bg-surface-container-high/60 flex items-center justify-center text-on-surface hover:text-primary-container active:scale-95 transition-all duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div>
+<h1 class="text-headline-sm font-headline-sm font-bold text-primary tracking-tight">Gadget Reservation</h1>
+<div class="flex items-center gap-1.5 -mt-0.5">
+<span class="text-label-caps font-label-caps text-on-surface-variant">GADGET #1</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-label-caps font-label-caps text-secondary font-semibold">ORDER #912</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button aria-label="Share gadget" class="w-10 h-10 rounded-full bg-surface-container-high/60 flex items-center justify-center text-on-surface-variant hover:text-primary-container active:scale-95 transition-all duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+<button aria-label="Save to wishlist" class="w-10 h-10 rounded-full bg-surface-container-high/60 flex items-center justify-center text-on-surface-variant hover:text-primary-container active:scale-95 transition-all duration-150" type="button">
+<span class="material-symbols-outlined" data-icon="bookmark" data-weight="fill" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+</header>
+<!-- Main Scrollable Canvas -->
+<main class="relative z-10 pt-20 px-gutter-mobile space-y-6 max-w-lg mx-auto">
+<!-- Hero Showcase Card -->
+<section class="rounded-xl overflow-hidden bg-surface-container-low/80 backdrop-blur-md p-4 shadow-xl">
+<!-- Device Visual Presentation Window -->
+<div class="relative w-full aspect-[16/10] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500" data-alt="A cutting-edge Asus gaming laptop rendered in ultra-sharp architectural high-tech luxury style, resting on a polished dark obsidian surface. The machine features sleek brushed graphite geometry, subtle cyan internal ventilation lighting, and crisp matte accents. Mood is cinematic, quiet computational prestige, framed with subtle volumetric studio illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSACPZmVSBe_yILKFVxjbyYdaTsgmq7xG22tH8i1XDu91S9-smdWt_dNF-pCdeW1ekGFj78t36LJ45Yvv4MX5ib7EcEkt8B0t7jrAhH298F3QGf-MQzxpFFzF7jLWz7F0FTipYEg14KGOWHxqmtvp4Sa7dtLDDmjBC-csQLA0WSkJeqkGiUriFdZ7jgQsxT9w2n8CN_ZfyII3l9YVOio1hAhoUPzrA3G6n6nWCghZifRA8Gfo9QcNW9Q"/>
+<!-- Top Status Indicators Overlay -->
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-label-caps font-label-caps text-primary tracking-widest">
+            LAPTOP
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-label-caps font-label-caps text-on-surface-variant tracking-wider">
+            ID: 001
+          </span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-lg">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00f0ff]"></span>
+<span class="text-label-caps font-label-caps text-primary-container font-semibold tracking-wider">AVAILABLE TODAY</span>
+</div>
+<!-- Dispatch Telemetry Bottom Ribbon -->
+<div class="absolute bottom-3 left-3 right-3 px-3 py-1.5 rounded-lg bg-surface-container-high/90 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-sm" data-icon="local_shipping">local_shipping</span>
+<span class="text-label-caps font-label-caps text-on-surface">STATUS:</span>
+<span class="text-label-caps font-label-caps text-primary-container font-semibold">READY FOR DISPATCH</span>
+</div>
+<span class="text-label-numeric font-label-numeric text-xs text-on-surface-variant">Hub: Apex-West</span>
+</div>
+</div>
+<!-- Identity & Hourly Rate Cluster -->
+<div class="mt-4 pt-1 flex items-start justify-between gap-4">
+<div>
+<span class="text-label-caps font-label-caps text-primary-container tracking-wider">GAMING &amp; WORKSTATION EDITION</span>
+<h2 class="text-headline-sm font-headline-sm font-bold text-on-background mt-0.5">Asus Laptop LOQ</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">Precision calibrated for intensive rendering &amp; competitive esports</p>
+</div>
+<div class="text-right shrink-0">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container-high/90">
+<div class="text-headline-sm font-headline-sm font-bold text-primary-container font-label-numeric">$100</div>
+<div class="text-label-caps font-label-caps text-on-surface-variant">PER HOUR</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Hardware Specifications Matrix -->
+<section class="rounded-xl p-4 bg-surface-container-low/70 backdrop-blur-md space-y-3.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="memory">memory</span>
+<h3 class="text-label-caps font-label-caps text-on-background tracking-wider">VERIFIED HARDWARE SPECIFICATIONS</h3>
+</div>
+<span class="text-label-caps font-label-caps text-on-surface-variant">SPREADSHEET RECORD #1</span>
+</div>
+<!-- Spec Grid Bento -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- GPU Spec Card -->
+<div class="rounded-lg p-3 bg-surface-container-lowest/80 relative overflow-hidden">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps text-outline">GRAPHICS ACCELERATOR</span>
+<span class="material-symbols-outlined text-base text-primary-container" data-icon="sports_esports">sports_esports</span>
+</div>
+<div class="mt-1 text-headline-sm font-headline-sm font-semibold text-primary">TRX4050</div>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full text-spec-code font-spec-code bg-surface-container-high text-primary-container">
+              2GB VRAM
+            </span>
+<span class="text-label-caps font-label-caps text-outline">Ray-Tracing</span>
+</div>
+</div>
+<!-- RAM Spec Card -->
+<div class="rounded-lg p-3 bg-surface-container-lowest/80 relative overflow-hidden">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps text-outline">SYSTEM MEMORY</span>
+<span class="material-symbols-outlined text-base text-primary-container" data-icon="developer_board">developer_board</span>
+</div>
+<div class="mt-1 text-headline-sm font-headline-sm font-semibold text-on-surface">8GB RAM</div>
+<div class="mt-1">
+<span class="px-2 py-0.5 rounded-full text-spec-code font-spec-code bg-surface-container-high text-on-surface-variant">
+              High-Speed DDR5
+            </span>
+</div>
+</div>
+<!-- Storage Spec Card -->
+<div class="rounded-lg p-3 bg-surface-container-lowest/80 relative overflow-hidden">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps text-outline">NVME STORAGE</span>
+<span class="material-symbols-outlined text-base text-primary-container" data-icon="hard_drive">hard_drive</span>
+</div>
+<div class="mt-1 text-headline-sm font-headline-sm font-semibold text-on-surface">500GB</div>
+<div class="mt-1">
+<span class="px-2 py-0.5 rounded-full text-spec-code font-spec-code bg-surface-container-high text-on-surface-variant">
+              NVMe M.2 High-IOPS
+            </span>
+</div>
+</div>
+<!-- Color & Finish Spec Card -->
+<div class="rounded-lg p-3 bg-surface-container-lowest/80 relative overflow-hidden">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps text-outline">CHASSIS FINISH</span>
+<span class="material-symbols-outlined text-base text-secondary" data-icon="palette">palette</span>
+</div>
+<div class="mt-1 text-headline-sm font-headline-sm font-semibold text-on-surface">Googe Black</div>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant border border-outline"></span>
+<span class="text-label-caps font-label-caps text-secondary font-semibold">Premium Chassis</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Rental Schedule & Duration Selector -->
+<section class="rounded-xl p-4 bg-surface-container-low/70 backdrop-blur-md space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="calendar_month">calendar_month</span>
+<h3 class="text-label-caps font-label-caps text-on-background tracking-wider">RENTAL CONFIGURATION</h3>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container-highest flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-primary-container" data-icon="schedule">schedule</span>
+<span class="text-spec-code font-spec-code text-primary-container">6 Hours Session</span>
+</div>
+</div>
+<!-- Start & End Date Selection Slots -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Start Slot -->
+<div class="p-3 rounded-lg bg-surface-container-lowest/90 transition-all">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps text-outline">START DISPATCH</span>
+<span class="material-symbols-outlined text-sm text-primary-container" data-icon="arrow_forward">arrow_forward</span>
+</div>
+<div class="mt-1.5 font-label-numeric text-label-numeric font-semibold text-on-surface">Oct 12, 2024</div>
+<div class="flex items-center gap-1 mt-0.5 text-label-caps font-label-caps text-primary-container font-semibold">
+<span class="material-symbols-outlined text-xs" data-icon="nest_clock_farsight_analog">nest_clock_farsight_analog</span>
+            10:00 AM
+          </div>
+</div>
+<!-- End Slot -->
+<div class="p-3 rounded-lg bg-surface-container-lowest/90 transition-all">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="text-label-caps font-label-caps text-outline">RETURN CUTOFF</span>
+<span class="material-symbols-outlined text-sm text-secondary" data-icon="event_available">event_available</span>
+</div>
+<div class="mt-1.5 font-label-numeric text-label-numeric font-semibold text-on-surface">Oct 12, 2024</div>
+<div class="flex items-center gap-1 mt-0.5 text-label-caps font-label-caps text-secondary font-semibold">
+<span class="material-symbols-outlined text-xs" data-icon="nest_clock_farsight_analog">nest_clock_farsight_analog</span>
+            04:00 PM
+          </div>
+</div>
+</div>
+<!-- Real-time Hour Counter Pill & Rate Calculator -->
+<div class="flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-surface-container-high/60">
+<div class="flex items-center gap-2">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Calculation:</span>
+<span class="text-spec-code font-spec-code text-primary font-bold">6 Hours × $100/hr</span>
+</div>
+<div class="text-label-numeric font-label-numeric font-bold text-primary-container">$600.00</div>
+</div>
+<!-- Verified Contact & Phone Record (From Database) -->
+<div class="pt-2">
+<label class="block text-label-caps font-label-caps text-outline mb-1.5">
+          CUSTOMER CONTACT (DATABASE VERIFIED)
+        </label>
+<div class="flex items-center gap-3 px-3.5 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30 focus-within:border-primary-container transition-all">
+<span class="material-symbols-outlined text-primary-container" data-icon="call">call</span>
+<div class="flex-1">
+<input class="w-full bg-transparent border-0 p-0 text-label-numeric font-label-numeric font-semibold text-on-surface focus:ring-0 cursor-default" readonly="" type="text" value="+1 (555) 435-6768"/>
+</div>
+<div class="flex items-center gap-1 text-label-caps font-label-caps text-primary-container px-2 py-0.5 rounded-full bg-primary-container/10">
+<span class="material-symbols-outlined text-xs" data-icon="verified_user">verified_user</span>
+            VERIFIED
+          </div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant text-xs mt-1.5 px-1">
+          Instant SMS gate pass and hardware telemetry link will be routed to this verified line.
+        </p>
+</div>
+</section>
+<!-- Payment Channels & Escrow Selection -->
+<section class="rounded-xl p-4 bg-surface-container-low/70 backdrop-blur-md space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="account_balance_wallet">account_balance_wallet</span>
+<h3 class="text-label-caps font-label-caps text-on-background tracking-wider">SETTLEMENT METHOD</h3>
+</div>
+<span class="text-label-caps font-label-caps text-primary-container">ESCROW SECURED</span>
+</div>
+<!-- Radio / Pill Selection Options -->
+<div class="space-y-2">
+<!-- Option 1: Escrow Delivery (Active) -->
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-high/90 border border-primary-container/50 cursor-pointer shadow-[0_0_12px_rgba(0,240,255,0.12)]">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full border-2 border-primary-container flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+</div>
+<div>
+<div class="text-body-md font-body-md font-semibold text-on-surface">Pay on Delivery / Escrow</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant text-xs">Funds held in vault until device handover inspection</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-container" data-icon="shield">shield</span>
+</label>
+<!-- Option 2: Cards -->
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20 hover:border-outline-variant transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full border-2 border-outline-variant flex items-center justify-center"></div>
+<div>
+<div class="text-body-md font-body-md text-on-surface">Credit / Debit Card</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant text-xs">Visa, Mastercard, Amex High-Limit Cards</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="credit_card">credit_card</span>
+</label>
+<!-- Option 3: Apple Pay -->
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20 hover:border-outline-variant transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full border-2 border-outline-variant flex items-center justify-center"></div>
+<div>
+<div class="text-body-md font-body-md text-on-surface">Apple Pay / Wallet</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant text-xs">One-touch biometric security guarantee</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="contactless">contactless</span>
+</label>
+</div>
+</section>
+<!-- Ledger & Financial Breakdown -->
+<section class="rounded-xl p-4 bg-surface-container-low/70 backdrop-blur-md space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="text-label-caps font-label-caps text-on-background tracking-wider">ORDER PRICING SUMMARY</h3>
+<span class="text-label-caps font-label-caps text-outline">REF: APX-912-A</span>
+</div>
+<div class="space-y-2 pt-1 border-t border-outline-variant/20">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Rental Fee (6 Hours @ $100/hr)</span>
+<span class="text-label-numeric font-label-numeric text-on-surface font-semibold">$600.00</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant">Security Deposit (Refundable)</span>
+<span class="material-symbols-outlined text-xs text-primary-container" data-icon="info">info</span>
+</div>
+<span class="text-label-numeric font-label-numeric text-secondary font-semibold">$150.00</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Damage Protection &amp; Firmware Check</span>
+<span class="text-spec-code font-spec-code text-primary-container font-semibold">INCLUDED</span>
+</div>
+<div class="pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface">Grand Total</div>
+<div class="text-label-caps font-label-caps text-on-surface-variant">INCLUDES REFUNDABLE DEPOSIT</div>
+</div>
+<div class="text-right">
+<div class="text-headline-md font-headline-md font-bold text-primary-container font-label-numeric tracking-tight">$750.00</div>
+<div class="text-label-caps font-label-caps text-secondary font-semibold">FINAL SETTLEMENT</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Guarantee & Terms Badge -->
+<div class="flex items-start gap-3 p-3.5 rounded-lg bg-surface-container-lowest/80 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-container shrink-0 mt-0.5" data-icon="verified">verified</span>
+<p class="text-body-sm font-body-sm text-xs leading-relaxed">
+<span class="font-semibold text-on-surface">Apex Hardware Assurance:</span> This Asus LOQ machine undergoes automated hardware burn-in diagnostics prior to courier dispatch. Security deposit is released instantly upon return verification.
+      </p>
+</div>
+</main>
+<!-- Sticky Bottom Checkout Glass Tray -->
+<aside class="fixed bottom-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl px-gutter-mobile py-space-sm shadow-[0_-4px_24px_rgba(0,0,0,0.6)]">
+<div class="max-w-lg mx-auto flex items-center justify-between gap-4">
+<!-- Live Calculation Cluster -->
+<div class="shrink-0">
+<div class="flex items-center gap-1.5">
+<span class="text-label-caps font-label-caps text-outline">TOTAL DUE:</span>
+<span class="text-spec-code font-spec-code text-secondary font-semibold">$150 Dep.</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-headline-md font-headline-md font-bold text-primary-container font-label-numeric">$750</span>
+<span class="text-label-caps font-label-caps text-on-surface-variant">USD</span>
+</div>
+</div>
+<!-- Primary CTA Button with Glow Effect -->
+<button class="flex-1 h-12 rounded-lg bg-primary-container text-on-primary-fixed font-headline-sm font-semibold flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(0,240,255,0.35)] hover:shadow-[0_0_28px_rgba(0,240,255,0.6)] active:scale-95 transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-xl" data-icon="bolt">bolt</span>
+<span>Confirm &amp; Reserve Gadget</span>
+</button>
+</div>
+</aside>
+</body></html>
