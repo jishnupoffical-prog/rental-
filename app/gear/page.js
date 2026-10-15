@@ -4,6 +4,7 @@ import { getProducts } from '../../lib/products';
 import { ProductCard } from '../../components/product-card';
 
 export const metadata = { title: 'Explore gear' };
+export const dynamic = 'force-dynamic';
 
 function categoryName(product) {
   const value = `${product.category} ${product.type} ${product.name}`.toLowerCase();
@@ -22,7 +23,13 @@ function categoryId(label) {
 }
 
 export default async function GearPage({ searchParams }) {
-  const products = await getProducts();
+  let products = [];
+  let catalogError = '';
+  try {
+    products = await getProducts();
+  } catch (error) {
+    catalogError = error.message || 'The live catalog is temporarily unavailable.';
+  }
   const params = await searchParams;
   const query = String(params?.search || '').trim().toLowerCase();
   const filtered = query ? products.filter((p) => `${p.name} ${p.model} ${p.category} ${p.description} ${p.specs.join(' ')}`.toLowerCase().includes(query)) : products;
@@ -42,6 +49,7 @@ export default async function GearPage({ searchParams }) {
     <section className="page-hero"><div className="container"><div className="eyebrow">THE NEXUS COLLECTION</div><h1>Good gear.<br/>Great possibilities.</h1><p className="muted">Explore the live rental collection by category.</p><div className="breadcrumb"><Link href="/">Home</Link> / Gear / All equipment</div></div></section>
     <section className="section"><div className="container">
       <div className="catalog-toolbar"><span>{query ? <>Results for <b>“{query}”</b></> : <>Showing <b>{filtered.length} pieces</b> of exceptional kit</>}</span><span><SlidersHorizontal size={16}/> Live catalog</span></div>
+      {catalogError && <p className="form-error" role="alert">The live rental catalog could not load: {catalogError}</p>}
       {groups.length > 0 && <nav className="gear-category-nav" aria-label="Product categories">{groups.map(([label, items]) => <a key={label} href={`#${categoryId(label)}`}>{label}<span>{items.length}</span></a>)}</nav>}
       {groups.length ? <div className="gear-category-groups">{groups.map(([label, items]) => <section className="gear-category-group" id={categoryId(label)} key={label}><div className="gear-category-heading"><div><span className="eyebrow">NEXUS COLLECTION</span><h2>{label}</h2></div><span>{String(items.length).padStart(2, '0')} {items.length === 1 ? 'ITEM' : 'ITEMS'}</span></div><div className="grid-products">{items.map((product) => <ProductCard key={product.id} product={product}/>)}</div></section>)}</div> : <div className="catalog-state"><b>No gear matched “{query}”.</b><p>Try another search or return to the full collection.</p><Link className="line-link" href="/gear">Clear search <ArrowRight size={16}/></Link></div>}
       <div className="catalog-note"><span className="live-dot"/> Need help choosing? <Link href="/contact">Talk to a gear expert <ArrowRight size={14}/></Link></div>
