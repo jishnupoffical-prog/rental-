@@ -1,6 +1,10 @@
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
+// Resolve Next.js config and .env.local relative to this project, even when
+// the launcher is invoked from another working directory.
+process.chdir(path.resolve(__dirname, '..'));
+
 const env = { ...process.env };
 // Windows Application Control may block Next.js's native SWC addon. Use its
 // version-matched WebAssembly fallback on Windows; other platforms stay native.
