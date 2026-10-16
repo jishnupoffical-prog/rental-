@@ -14,10 +14,6 @@ export async function GET(request) {
 }
 
 export async function POST(request) {
-  if (!process.env.ADMIN_PASSWORD) {
-    return NextResponse.json({ error: 'Set ADMIN_PASSWORD in .env.local to enable the admin page.' }, { status: 503 });
-  }
-
   let body;
   try {
     body = await request.json();
